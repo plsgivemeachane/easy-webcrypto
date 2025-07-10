@@ -58,7 +58,7 @@ export class RSA {
         const encoder = new TextEncoder();
         const data = encoder.encode(plaintext);
         const importedKey = await RSA.importPrivateKey(privateKey);
-        const signature = await crypto.subtle.sign({ name: "RSA-PSS" }, importedKey, data);
+        const signature = await crypto.subtle.sign({ name: "RSA-PSS", saltLength: 32 }, importedKey, data);
         return arrayBufferToBase64(signature);
     }
     /**
@@ -67,6 +67,6 @@ export class RSA {
     static async verify(publicKey, plaintext, signatureBase64) {
         const signature = base64ToArrayBuffer(signatureBase64);
         const importedKey = await RSA.importPublicKey(publicKey);
-        return crypto.subtle.verify({ name: "RSA-PSS" }, importedKey, signature, new TextEncoder().encode(plaintext));
+        return crypto.subtle.verify({ name: "RSA-PSS", saltLength: 32 }, importedKey, signature, new TextEncoder().encode(plaintext));
     }
 }
