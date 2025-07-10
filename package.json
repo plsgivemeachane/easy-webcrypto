@@ -1,0 +1,49 @@
+{
+  "name": "easy-webcrypto",
+  "version": "1.0.0",
+  "description": "A lightweight wrapper around the native Web Crypto API, providing simple, class-based abstractions and TypeScript typings for easy cryptography in the browser.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write .",
+    "test": "vitest run",
+    "dev": "vitest watch",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "webcrypto",
+    "crypto",
+    "browser",
+    "encryption",
+    "typescript",
+    "aes",
+    "rsa",
+    "ecdsa",
+    "cryptography",
+    "security",
+    "wrapper",
+    "simplify"
+  ],
+  "author": "Lê Minh Quân",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/plsgivemeachane/easy-webcrypto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/plsgivemeachane/easy-webcrypto/issues"
+  },
+  "homepage": "https://github.com/plsgivemeachane/easy-webcrypto#readme",
+  "type": "module",
+  "engines": {
+    "node": ">=16"
+  },
+  "devDependencies": {
+    "eslint": "^9.30.1",
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}
