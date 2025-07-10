@@ -1,16 +1,11 @@
 {
   "name": "easy-webcrypto",
   "version": "1.0.0",
-  "description": "A lightweight wrapper around the native Web Crypto API, providing simple, class-based abstractions and TypeScript typings for easy cryptography in the browser.",
+  "description": "A simple wrapper for the browser's Web Crypto API. Supports AES-GCM, RSA, and ECDSA (P-256), exposing easy-to-use functions where all keys are safe Base64 strings.",  
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "lint": "eslint src --ext .ts",
-    "format": "prettier --write .",
-    "test": "vitest run",
-    "dev": "vitest watch",
-    "prepare": "npm run build"
+    "build": "tsc"
   },
   "keywords": [
     "webcrypto",
