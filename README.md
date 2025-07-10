@@ -1,4 +1,4 @@
-# easy-webcrypto
+# novice-webcrypto
 
 > Simplify browser cryptography with safe, easy-to-use TypeScript classes.  
 > Built for developers who dislike the verbose native Web Crypto API.  
@@ -18,11 +18,11 @@
 
 ## Installation
 
-`npm install easy-webcrypto`
+`npm install novice-webcrypto`
 
 or
 
-`pnpm add easy-webcrypto`
+`pnpm add novice-webcrypto`
 
 ---
 
@@ -31,7 +31,7 @@ or
 ### AES-GCM Encryption & Decryption
 
 ```ts
-import { AES } from "easy-webcrypto";
+import { AES } from "novice-webcrypto";
 
 // Generate a new AES key
 const key = await AES.generateKey();
@@ -49,7 +49,7 @@ console.log(plaintext); // Hello World\
 ### ECDSA Sign & Verify
 
 ```ts
-import { ECDSA } from "easy-webcrypto";
+import { ECDSA } from "novice-webcrypto";
 
 const { publicKey, privateKey } = await ECDSA.generateKeyPair();
 
@@ -65,7 +65,7 @@ console.log(valid); // true
 ### RSA Encryption Example
 
 ```ts
-import { RSA } from "easy-webcrypto";
+import { RSA } from "novice-webcrypto";
 
 const { publicKey, privateKey } = await RSA.generateKeyPair();
 

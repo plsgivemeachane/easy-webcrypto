@@ -1,5 +1,5 @@
 {
-  "name": "easy-webcrypto",
+  "name": "novice-webcrypto",
   "version": "1.0.2",
   "description": "A simple wrapper for the browser's Web Crypto API. Supports AES-GCM, RSA, and ECDSA (P-256), exposing easy-to-use functions where all keys are safe Base64 strings.",  
   "main": "dist/index.js",
